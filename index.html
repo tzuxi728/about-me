@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --card: #1a1a1a;
+      --text: #e5e5e5;
+      --muted: #888;
+      --accent: #a78bfa;
+      --border: #2a2a2a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    header {
+      margin-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.95rem;
+    }
+
+    .contacts a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about p {
+      color: var(--muted);
+    }
+
+    .empty {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    .item {
+      margin-bottom: 24px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 4px;
+    }
+
+    .item-title {
+      font-weight: 600;
+    }
+
+    .item-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .item-desc {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 32px 16px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .item-header {
+        flex-direction: column;
+        gap: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Имя Фамилия</h1>
+      <p class="subtitle">Должность / Специализация</p>
+      <div class="contacts">
+        <a href="mailto:">email@example.com</a>
+        <a href="#">Telegram</a>
+        <a href="#">GitHub</a>
+        <span>Город</span>
+      </div>
+    </header>
+
+    <section class="about">
+      <h2>О себе</h2>
+      <p class="empty">Краткое описание о себе. Пока пусто.</p>
+    </section>
+
+    <section>
+      <h2>Опыт работы</h2>
+      <p class="empty">Пока нет записей.</p>
+      <!--
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Должность · Компания</span>
+          <span class="item-meta">202X — н.в.</span>
+        </div>
+        <p class="item-desc">Описание обязанностей и достижений.</p>
+      </div>
+      -->
+    </section>
+
+    <section>
+      <h2>Образование</h2>
+      <p class="empty">Пока нет записей.</p>
+      <!--
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Учебное заведение</span>
+          <span class="item-meta">202X — 202X</span>
+        </div>
+        <p class="item-desc">Специальность / степень</p>
+      </div>
+      -->
+    </section>
+
+    <section>
+      <h2>Навыки</h2>
+      <div class="skills">
+        <span class="skill">—</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Проекты</h2>
+      <p class="empty">Пока нет записей.</p>
+    </section>
+
+    <footer>
+      about-me · тестовая страница
+    </footer>
+  </div>
+</body>
+</html>
